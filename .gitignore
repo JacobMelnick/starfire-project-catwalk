@@ -101,3 +101,8 @@ bundle.js
 
 # TernJS port file
 .tern-port
+
+# TOKEN
+config.js
+
+.env

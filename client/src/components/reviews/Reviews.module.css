@@ -1,0 +1,175 @@
+.gridContainer {
+  margin-top: 100px;
+  color: #808080;
+  font-size: 18px;
+  display: grid;
+  gap: 100px;
+  grid-template-columns: 1fr 1.6fr 0.4fr;
+  grid-template-rows: repeat(1fr 1fr 1fr);
+  gap: 0px 0px;
+  grid-template-areas:
+    "Product-Breakdown Reviews-List ."
+    ". . ."
+    ". . .";
+}
+
+.reviewsList {
+  margin-right: 100x;
+  grid-area: Reviews-List;
+  max-height: 55vh;
+  min-height: 55vh;
+  overflow: auto;
+}
+
+.productBreakdown {
+  margin-left: 250px;
+  grid-area: Product-Breakdown;
+  padding-top: 35px;
+  text-align: left;
+}
+
+.reviewTile {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+}
+
+.reviewButtons {
+  display: in-line;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #26a7ba;
+}
+
+.reviewSummary {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.userDate {
+  font-size: 12px;
+  text-align: right;
+  opacity: 80%;
+  margin-bottom: 15px;
+}
+
+.thumbnails {
+  display: inline;
+}
+
+.smallImg {
+  display: inline;
+  margin-top: 10px;
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+}
+
+.showMore {
+  margin: 10px;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.writeReview {
+  background-color: red;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formModal {
+  background-color: white;
+  position: fixed;
+  max-height: 50%;
+  min-height: 50%;
+  width: 50%;
+  top: 25%;
+  left: 25%;
+  overflow: auto;
+  box-shadow: 5px 5px 5px #888888;
+  font-size: 14px;
+}
+
+.exit {
+  color: lightgray;
+  margin: 10px;
+  text-align: right;
+  cursor: pointer;
+  display: block;
+}
+
+.reviewForm {
+  margin: 20px;
+}
+
+.formTitle {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.fields {
+  font-family: "Roboto", sans-serif;
+}
+
+h2,
+h3 {
+  margin-left: 20px;
+}
+
+.dropDown {
+  -webkit-appearance: none;
+  color: #808080;
+  border: none;
+  background-color: #f5efed;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.stars {
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+}
+
+.star {
+  height: 20px;
+  width: 20px;
+}
+
+.ratingFilters {
+  width: 100%;
+}
+
+.bar {
+  padding: 0px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: lightgray;
+  margin: 0px;
+  height: 20px;
+  width: 65%;
+  border-radius: 50px;
+}
+
+.filler {
+  background: #d96c06;
+  height: 100%;
+  border-radius: inherit;
+}

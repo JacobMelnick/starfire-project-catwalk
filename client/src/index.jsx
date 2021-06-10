@@ -1,22 +1,8 @@
-import React, {useState} from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom';
-
-const App = () => {
-
-// const [text, setText] = useState('')
+import App from './components/App.jsx';
+import './style.css';
 
 
-
-// setText('hello World')
-
-
-return (
-    <div>Hello World</div>
-)
-
-}
-
-ReactDOM.render(<App />, document.getElementById('app'))
-
-export default App
+ReactDOM.render(<App />, document.getElementById('app'));
 
